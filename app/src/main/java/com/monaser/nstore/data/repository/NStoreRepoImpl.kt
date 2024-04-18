@@ -4,8 +4,8 @@ import android.util.Log
 import com.monaser.nstore.data.local.NStoreDao
 import com.monaser.nstore.data.local.NStoreInfoDao
 import com.monaser.nstore.data.local.entity.ResponseEntity
-import com.monaser.nstore.data.local.entity.mappers.toDomain
-import com.monaser.nstore.data.local.entity.mappers.toEntity
+import com.monaser.nstore.data.mappers.toDomain
+import com.monaser.nstore.data.mappers.toEntity
 import com.monaser.nstore.data.remote.NStoreApi
 import com.monaser.nstore.data.remote.models.ResponseDto
 import com.monaser.nstore.domain.entity.Response

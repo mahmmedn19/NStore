@@ -1,10 +1,8 @@
 package com.monaser.nstore.ui.screens.details
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -29,7 +27,7 @@ import com.skydoves.landscapist.glide.GlideImage
 
 @Composable
 fun DetailsScreen() {
-    val  viewModel : DetailsViewModel = hiltViewModel()
+    val viewModel: DetailsViewModel = hiltViewModel()
     val uiState by viewModel.state.collectAsState()
     DetailsContent(
         uiState = uiState,

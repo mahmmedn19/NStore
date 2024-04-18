@@ -1,7 +1,6 @@
-package com.monaser.nstore.data.local.entity.mappers
+package com.monaser.nstore.data.mappers
 
 import com.monaser.nstore.data.local.entity.ResponseEntity
-import com.monaser.nstore.data.remote.models.ImageData
 import com.monaser.nstore.data.remote.models.ResponseDto
 import com.monaser.nstore.domain.entity.Response
 
