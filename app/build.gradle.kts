@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.7"
     }
     packaging {
         resources {
@@ -74,6 +74,8 @@ dependencies {
     // Room
     implementation(libs.androidx.room.runtime)
     annotationProcessor(libs.androidx.room.compiler)
+    implementation("androidx.room:room-ktx:2.6.1") // replace with the latest version
+
     // To use Kotlin Symbol Processing (KSP)
     ksp(libs.room.compiler)
 
@@ -97,5 +99,9 @@ dependencies {
 
     // Store5
     implementation (libs.store5)
+
+    implementation( "io.github.oleksandrbalan:modalsheet:0.6.0")
+    implementation ("androidx.navigation:navigation-compose:2.7.7")
+
 
 }
