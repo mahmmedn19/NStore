@@ -13,9 +13,9 @@ NStore is an application that showcases fake images with titles and descriptions
 
 NStore utilizes Store5, a data management library, to efficiently handle data in modern software applications. Store5 was developed to address the following needs:
 
-- Modern software requires fluid and always-available data representations.
-- Users expect a seamless user interface experience without interruptions caused by new data loads.
-- International users expect minimal data downloads to avoid excessive phone bills.
+- **Fluid Data Representations**: Modern software demands fluid and always-available data representations.
+- **Seamless User Experience**: Users expect their UI experience to remain uninterrupted by new data loads, ensuring a seamless experience both online and offline.
+- **Minimal Data Downloads**: International users expect minimal data downloads to avoid astronomical phone bills.
 
 ## Features
 
