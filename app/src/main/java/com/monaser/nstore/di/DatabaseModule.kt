@@ -14,6 +14,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object DatabaseModule {
     private const val DATABASE_NAME = "nstore_database"
+
     @Singleton
     @Provides
     fun provideDatabase(@ApplicationContext context: Context): NStoreDatabase {
@@ -21,9 +22,12 @@ object DatabaseModule {
             context.applicationContext,
             NStoreDatabase::class.java,
             DATABASE_NAME
-        ).build()
+        ).fallbackToDestructiveMigration().build()
     }
 
     @Provides
     fun provideNStoreDao(database: NStoreDatabase) = database.nStoreDao()
+
+    @Provides
+    fun provideNStoreInfoDao(database: NStoreDatabase) = database.nStoreInfoDao()
 }
