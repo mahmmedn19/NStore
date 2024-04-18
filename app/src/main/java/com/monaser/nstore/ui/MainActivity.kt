@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     CompositionLocalProvider(LocalNavigationProvider provides navController) {
-                        NStoreNavGraph(navController)
+                        NStoreNavGraph()
                     }
                 }
             }
